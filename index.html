@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset='UTF-8'>
+            <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+            <link rel="stylesheet" href= "css/style.css">
+            <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet"> 
+            <title>Form</title>
+        </head>
+    <header>
+        <h1 class="title">THE CODE REVIEW</h1>
+        <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        <hr class="hr1">
+        <hr class="hr2">
+    </header>  
+    <main>
+        <div class="container1">
+            <form action="index.html" method="post">
+            <fieldset class="fieldset1"> 
+            <legend class="legend1">Contact Information</legend>
+            <div class="Item1">
+                <label class="namelabel" for="name">Full Name</label><br>
+                <input type="text" id="name" placeholder="Required" name="user_name" required> <br>   
+            </div>
+            <div class="Item2">
+                <label class="emaillabel" for="email">Email Address</label><br>
+                <input type="email" id="email" placeholder="Required" name="user_email" required> <br>
+            </div>
+            <div class="Item3">
+                <label class="phonelabel" for="phone">Phone Number</label> <br>
+                <input type="tel" id="phone" placeholder="(123)-455-6578" name="user_phone"> <br>
+            </div>
+            <div class="Item4">
+                <label class="addresslabel" for="address">Street Address</label> <br>
+                <input type="text" id="address" placeholder="22 John Street" name="user_address"> <br>
+            </div>
+            <div class="Item5">
+                <label class="citylabel" for="city">City</label> <br>
+                <input type="text" id="city" placeholder="FreedomTown" name="user_city"> <br>
+            </div>
+            <div class="Item6">
+                <label class="statelabel" for="state">State</label> <br>
+                <select id="state" name="user_state">
+                    <option value="Alamaba">AL</option>
+                    <option value="Alaska">AK</option>
+                    <option value="Arizona">AZ</option>
+                    <option value="Arkansas">AR</option>
+                    <option value="California">CA</option>
+                    <option value="Colorado">CO</option>
+                    <option value="Connecticut">CT</option>
+                    <option value="Delaware">DE</option>
+                    <option value="Florida">FL</option>
+                    <option value="Georgia">GA</option>
+                    <option value="Hawaii">HI</option>
+                    <option value="Idaho">ID</option>
+                    <option value="Illinois">IL</option>
+                    <option value="Indiana">IN</option>
+                    <option value="Iowa">IA</option>                
+                    <option value="Kansas">KS</option>
+                    <option value="Kentucky">KY</option>
+                    <option value="Louisiana">LA</option>
+                    <option value="Maine">ME</option>
+                    <option value="Maryland">MD</option>
+                    <option value="Massachusetts">MA</option>
+                    <option value="Michigan">MI</option>
+                    <option value="Minnesota">MN</option>
+                    <option value="Mississippi">MS</option>
+                    <option value="Missouri">MO</option>
+                    <option value="Montana">MT</option>
+                    <option value="Nebraska">NE</option>
+                    <option value="Nevada">NV</option>
+                    <option value="New Hampshire">NH</option>
+                    <option value="New Jersey">NJ</option>
+                    <option value="New Mexico">NM</option>
+                    <option value="New York">NY</option>
+                    <option value="North Carolina">NC</option>
+                    <option value="North Dakota">ND</option>
+                    <option value="Ohio">OH</option>
+                    <option value="Oklahoma">OK</option>
+                    <option value="Oregon">OR</option>
+                    <option value="Pennsylvania">PA</option>
+                    <option value="Rhode Island">RI</option>
+                    <option value="South Carolina">SC</option>
+                    <option value="South Dakota">SD</option>
+                    <option value="Tennessee">TN</option>
+                    <option value="Texas">TX</option>
+                    <option value="Utah">UT</option>
+                    <option value="Vermont">VT</option>
+                    <option value="Virginia">VA</option>
+                    <option value="Washington">WA</option>
+                    <option value="West Virginia">WV</option>
+                    <option value="Wisconsin">WI</option>
+                    <option value="Wyoming">WY</option>
+                </select> <br>
+            </div>
+            <div class="Item7">
+                <label class="ziplabel" for="zip">Zip Code</label><br> 
+                <input type="number" id="zip" placeholder="01001" name="user_zip"> <br> 
+            </div>
+            </fieldset>
+
+                <hr class="hr3">
+
+                <h1 class="news">Newsletter</h1>
+                
+            <fieldset id="container3">
+            <legend class="legend2">Select the newsletter you would like to recieve</legend>
+            <div class="Item8">
+                <input type="checkbox" id="html_news" value="html_news" name="user_news">
+                <label class="htmlnewslabel" for="html_news">HTML News</label> <br>
+            </div>
+            <div class="Item9">
+                <input type="checkbox" id="css_news" value="css_news" name="user_news">
+                <label class="cssnewslabel" for="css_news">CSS News</label> <br>
+            </div>
+            <div class="Item10">
+                <input type="checkbox" id="javascript_news" value="javascript_news" name="user_news">
+                <label class="javascriptnewslabel" for="javascript_news">JavaScript News</label> <br>
+            </div>
+
+                <p class="legend3">Newsletter Format</p>
+
+            <div class="Item11">
+                <input type="radio" id="html" value="html" name="user_text_type">
+                <label class="htmlradio" for="html">HTML</label><br>
+            </div>
+            <div class="Item12">
+                <input type="radio" id="plain_text" value="plain_text" name="user_text_type">
+                <label class="plaintextradio" for="plain_text">Plain Text</label><br>
+            </div>
+                <label class="legend4" for="more_info">Other topics you'd like to hear about</label><br>
+            <div class="Item13">
+                <textarea id="more_info" placeholder="Type topics here..." name="user_more_info"></textarea> <br>
+            </div>
+            <div class="Item14">    
+                <button class="button" type="submit">Sign Up</button><br>
+            </div>
+            </fieldset>
+        </form>
+        </div>        
+    </main>
+    <footer>
+        <p>Copyright The Code Review</p><br>
+    </footer>
+  </html>
+  
+  

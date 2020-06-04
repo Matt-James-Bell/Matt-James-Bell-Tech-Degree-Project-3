@@ -1,0 +1,493 @@
+
+/* ------Base Selectors ---------- */
+
+html {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+
+main {
+    background: linear-gradient(white,tan)
+}
+
+h1 {
+    margin-top: .8em;
+
+}
+
+header h2 {
+    text-align: center;
+    font-size: 1.4em;   
+}
+
+main h2 {
+    text-align: left;
+    font-size: 1.4em;
+}
+
+header p {
+    text-align: center;
+    color: rgb(56, 56, 56);
+
+}
+
+p {
+    color: rgb(56, 56, 56);
+    font-family: 'DM Mono', monospace;
+}
+
+label {
+    color: rgb(56, 56, 56);
+}
+
+input, 
+select {
+    padding: .8em;
+    margin: .8em;
+    width: 85%;
+    background: rgb(219, 219, 219);
+    transition: height 5s;
+}
+
+button{
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    left: .5em;
+    width: 80%;
+    margin: 30px;
+    background-color: rgba(2, 148, 153, 0.856);
+    font-size: 1em;
+    font-weight: bold;
+    color: white; 
+}
+
+textarea {
+    padding-bottom: 30px;
+    padding-right: 30px; 
+    position: relative;
+    left: 1em;
+    width: 70%;
+    margin-bottom: 30px;
+    transition: width 2s, height 4s;
+    top: 2em;
+}
+
+footer p {
+    text-align: center;
+}
+
+legend {
+    margin-bottom: 1em;
+}
+
+/* ------ID Selectors ---------- */
+
+#zip {
+    width: 30%;
+}
+
+#html_news {
+    max-width: 20%;
+}
+
+#css_news {
+    max-width: 20%;
+}
+
+#javascript_news {
+    max-width: 20%;
+}
+
+#html {
+    max-width: 20%;
+}
+
+#name::placeholder {
+    text-align: right;
+}
+
+#email::placeholder {
+    text-align: right;
+}
+
+#more_info::placeholder {
+    text-align: left;
+}
+
+#state::placeholder {
+    text-align: left;
+}
+
+#plain_text {
+    max-width: 20%;
+}
+
+/* ------Class Selectors ---------- */
+
+.title {
+    background: rgba(0, 0, 0, 0.664);
+    color: white;
+    font-size: 1.5em;
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    position: relative;
+    bottom: .5em;
+    right: .5em;
+    width: 100%;
+}
+
+.news {
+    font-size: 1.4em;
+    margin-top: 2em;
+}
+
+.htmlnewslabel {
+    position: relative;
+    right: 2em; 
+}
+
+.cssnewslabel {
+    position: relative;
+    right: 2em;
+}
+
+.javascriptnewslabel {
+    position: relative;
+    right: 2em;
+}
+
+.htmlradio {
+    position: relative;
+    right: 2em;
+}
+
+.plaintextradio {
+    position: relative;
+    right: 2em;
+}
+
+.legend1 {
+    font-size: 1.35em;
+    color: black;
+    font-weight: bold;
+    margin-top: .8em;
+}
+
+.legend2,
+.legend3,
+.legend4 {
+    color: rgb(75, 75, 75);
+    font-size: 1em;
+    position: relative;
+    left: .1em;
+}
+
+.legend3,
+.legend4 {
+    top: .8em;
+}
+
+.hr1 {
+    width: 100%;
+    margin-top: 2em;
+    height:5px;
+    border-width:0;color:black;
+    background-color:black;
+}
+
+.hr2 {
+    width: 100%;
+    margin-bottom: 2em;
+    color:black;
+    background-color:black
+}
+
+.hr3 {
+    width: 100%;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    color:black;
+    background-color:black;
+}
+
+/* ------Action Selectors ---------- */
+
+#name:focus {
+    background-color: tan;
+}
+
+#email:focus {
+    background-color: tan;
+}
+
+#phone:focus {
+    background-color: rgb(245, 196, 133);
+}
+
+#address:focus {
+    background-color: rgb(245, 196, 133);
+}
+
+#city:focus {
+    background-color: rgb(245, 196, 133);
+}
+
+#state:focus {
+    background-color: rgb(245, 196, 133);
+}
+
+#zip:focus {
+    background-color: rgb(245, 196, 133);
+}
+
+textarea:hover {
+    width: 270px;
+    height: 70px;
+}
+
+textarea:focus {
+    background: radial-gradient(tan 50%,white);
+    width: 290px;
+    height: 90px;
+}
+
+input:focus {
+    height: 3em;
+}
+
+@media (min-width:768px) {
+
+/* ------Base Selectors ---------- */
+
+:root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+br {
+    display: none; 
+}    
+
+form {
+    width: 80%;
+    margin-left: 5em;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+input ,
+select {
+    width: 65%;
+}
+
+/* ------Class Selectors ---------- */
+
+.namelabel {
+    margin-right: 4.6em;
+}
+
+.emaillabel {
+    margin-right: 3em;
+}
+
+.phonelabel {
+    margin-right: 3em;
+}
+
+.addresslabel {
+    margin-right: 3em;
+}
+
+.citylabel {
+    margin-right: 7.3em;
+}
+
+.statelabel {
+    margin-right: 7em;
+}
+
+.ziplabel {
+    margin-right: 5.2em;
+}
+
+.htmlnewslabel  {
+    position: relative;
+    right: 3.5em;
+}
+
+.cssnewslabel  {
+    position: relative;
+    right: 3.5em;
+}
+
+#htmlnews {
+    max-width: fit-content;
+}
+
+.javascriptnewslabel  {
+    position: relative;
+    right: 3.5em;
+}
+
+.htmlradio {
+    position: relative;
+    right: 3.5em;
+}
+
+.plaintextradio {
+    position: relative;
+    right: 3.5em;
+}
+
+.legend3 {
+    margin-bottom: 2em;
+}
+
+.legend4 {
+    margin-bottom: 2em;
+}
+
+.hr1 {
+    width: 80%;
+    margin-top: 2em;
+    height:5px;
+    border-width:0;color:black;
+    background-color:black;
+    text-align: center;
+}
+
+.hr2 {
+    width: 80%;
+    margin-bottom: 2em;
+    color:black;
+    background-color:black
+}
+
+.hr3 {
+    width: 100%;
+    margin-bottom: .5em;
+    margin-top: 3em;
+    color:black;
+    background-color:black;
+}
+
+.button {
+    margin-left: 3.8em;
+}
+
+/* ------ID Selectors ---------- */
+
+#zip {
+    width: 15%;
+}
+    
+#more_info {
+    width: 90%;
+    height: 5em;
+}
+
+/* ------Action Selectors ---------- */
+
+textarea:hover {
+    width: 950px;
+    height: 950px;
+}
+
+textarea:focus {
+    background: radial-gradient(tan 50%,white);
+    width: 950px;
+    height: 950px;
+}
+
+@media (min-width:1100px) {  
+
+/* ------Base Selectors ---------- */
+
+form {
+    width: 80%;
+    margin-left: 7em;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* ------Class Selectors ---------- */
+
+.htmlnewslabel  {
+    position: relative;
+    right: 5.5em;
+}
+
+.cssnewslabel  {
+    position: relative;
+    right: 5.5em;
+}
+
+.javascriptnewslabel  {
+    position: relative;
+    right: 5.5em;
+}
+
+.htmlradio {
+    position: relative;
+    right: 5.5em;
+}
+
+.plaintextradio {
+    position: relative;
+    right: 5.5em;
+}
+
+.button {
+    margin-left: 4.5em;
+}
+
+/* ------Action Selectors ---------- */
+
+textarea:hover {
+    width: 1200px;
+    height: 1200px;
+}
+
+textarea:focus {
+    background: radial-gradient(tan 50%,white);
+    width: 1200px;
+    height: 1200px;
+    
+}
+}
+
+/* Index */
+
+
+/* Labels */                        /* Input */                         /*All/*
+ 
+.namelabel                          #name                               .item1
+.emaillabel                         #email                              .item2
+.phonelabel                         #phone                              .item3
+.addresslabel                       #address                            .item4
+.citylabel                          #city                               .item5
+.statelabel                         #state                              .item6
+.ziplabel                           #zip                                .item7
+
+.htmlnewslabel                      #html_news                          .item8
+.cssnewlabel                        #css_news                           .item9
+.javascriptnewslabel                #javascript_news                    .item10
+
+.htmlradio                          #html                               .item11
+.plaintextradio                     #plain_text                         .item12
+                                    #more_info                          .item13
+.button                                                                 .item14
+ */
+
+
+
+
+
+
+}
